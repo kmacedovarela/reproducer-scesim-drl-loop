@@ -1,0 +1,8 @@
+package com.myspace.loop_reproduce
+
+rule "My Rule"
+    when
+        m:Message()
+    then
+        insertLogical(new Message());
+end
